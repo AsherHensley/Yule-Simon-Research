@@ -1,12 +1,12 @@
-%EXAMPLE() Example Script for Running Yule-Simon Inference
+%SCRIPT() Example Script for Running Yule-Simon Inference
 %
 %   Revisions:
-%   1.0     13-Aug-2018     Hensley     Initial release
+%   1.0     04-Jan-2020     Hensley     Initial release
 %
 %   MIT License
 % 
-%   Copyright (c) 2018 Asher A. Hensley Research
-%   $Revision: 1.0 $  $Date: 2018/08/13 12:00:01 $
+%   Copyright (c) 2020 Asher A. Hensley Research
+%   $Revision: 1.0 $  $Date: 2020/01/04 12:00:01 $
 %   
 %   Permission is hereby granted, free of charge, to any person obtaining a 
 %   copy of this software and associated documentation files (the 
@@ -31,6 +31,9 @@
 close all
 clear
 clc
+
+%Path Setup
+addpath(genpath('../../'))
 
 %Import Closing Prices
 x = read_yahoo_csv('GSPC.csv');
