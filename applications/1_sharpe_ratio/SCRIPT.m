@@ -32,6 +32,9 @@ close all
 clear
 clc
 
+%Path Setup
+addpath(genpath('../../'))
+
 %Import Closing Prices
 x = read_yahoo_csv('GSPC.csv');
 
