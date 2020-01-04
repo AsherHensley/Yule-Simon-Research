@@ -566,8 +566,11 @@ L4 = sum(log(gampdf(Chain.lambda,Chain.c,1/Chain.d)));
 LP = L1+0*(L2+L3+L4);
 
 %Error Chk
-if any(isnan(LP)) || any(isinf(LP))
-    error('Calculation problem in logPosterior')
+if any(isnan(LP))
+    warning('NaN returned from logPosterior')
+end
+if any(isinf(LP))
+    warning('Inf returned from logPosterior')
 end
 
 %**************************************************************************
