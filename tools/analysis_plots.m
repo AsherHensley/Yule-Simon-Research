@@ -65,8 +65,9 @@ xlabel('Year')
 ylabel('Log-Return')
 grid on
 ylim(1*ax(3:4))
-title('Volatility Analysis')
+title('Volatility Clustering')
 legend('Observation','Volatility (2\sigma)','location','best')
+axis tight
 
 %Model-Fit
 subplot(4,2,5)
